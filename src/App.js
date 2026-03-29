@@ -95,19 +95,19 @@ const Overlay = () => {
   return (
     <Scroll html style={{ width: '100%' }}>
       {/* SECTION 1: HERO */}
-      <section className="h-screen flex flex-col justify-center px-10 md:px-24">
-        <div className="max-w-5xl p-12 bg-teal-950/20 backdrop-blur-xl border border-teal-400/20 rounded-[50px] shadow-2xl">
-          <div className="flex items-center gap-3 mb-6">
-             <div className="h-[2px] w-12 bg-teal-400"></div>
-             <span className="text-teal-400 font-black tracking-[0.5em] uppercase text-xs">
+      <section className="min-h-screen flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-24 py-8">
+        <div className="max-w-5xl w-full mx-auto p-4 sm:p-8 md:p-12 bg-teal-950/20 backdrop-blur-xl border border-teal-400/20 rounded-3xl md:rounded-[50px] shadow-2xl">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+             <div className="h-[2px] w-8 sm:w-12 bg-teal-400"></div>
+             <span className="text-teal-400 font-black tracking-widest sm:tracking-[0.5em] uppercase text-xs">
                 Class A Government Contractor
              </span>
           </div>
-          <h1 className="text-8xl md:text-[12rem] font-black text-white leading-[0.8] uppercase italic tracking-tighter">
+          <h1 className="text-5xl xs:text-7xl sm:text-8xl md:text-[8rem] lg:text-[12rem] font-black text-white leading-[0.9] uppercase italic tracking-tighter">
             ABBS<br/>
             <span className="text-teal-400 not-italic">INFRA</span>
           </h1>
-          <p className="mt-10 text-teal-100/60 text-xl md:text-3xl font-medium max-w-2xl leading-tight">
+          <p className="mt-6 sm:mt-10 text-teal-100/60 text-lg sm:text-xl md:text-3xl font-medium max-w-2xl leading-tight">
             Spearheading Heavy Civil Engineering across <br/>
             <span className="text-white font-black italic">Kanyakumari & Tirunelveli.</span>
           </p>
@@ -115,61 +115,61 @@ const Overlay = () => {
       </section>
 
       {/* SECTION 2: D&B DATA (Turquoise Glossy Cards) */}
-      <section className="h-screen flex items-center px-10 md:px-24">
-        <div className="grid md:grid-cols-2 gap-10 w-full">
-          <div className="p-10 bg-white/5 backdrop-blur-3xl border border-teal-400/20 rounded-[40px] shadow-[0_20px_50px_rgba(20,184,166,0.1)] hover:border-teal-400/50 transition-all duration-700">
-            <h2 className="text-teal-400 font-black uppercase text-xs tracking-widest mb-4">Core Specialization</h2>
-            <p className="text-white text-3xl md:text-4xl font-bold uppercase italic leading-tight">
+      <section className="min-h-screen flex items-center px-4 sm:px-6 md:px-12 lg:px-24 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 w-full">
+          <div className="p-6 sm:p-8 md:p-10 bg-white/5 backdrop-blur-3xl border border-teal-400/20 rounded-2xl md:rounded-[40px] shadow-[0_20px_50px_rgba(20,184,166,0.1)] hover:border-teal-400/50 transition-all duration-700">
+            <h2 className="text-teal-400 font-black uppercase text-xs tracking-widest mb-2 sm:mb-4">Core Specialization</h2>
+            <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase italic leading-tight">
               Water and Sewer Line Structures Construction
             </p>
           </div>
-          <div className="p-10 bg-teal-900/20 backdrop-blur-3xl border border-teal-400/30 rounded-[40px] shadow-2xl translate-y-16">
-            <h2 className="text-teal-400 font-black uppercase text-xs tracking-widest mb-4">Verified Profile</h2>
-            <p className="text-white text-3xl md:text-4xl font-bold uppercase leading-tight">
+          <div className="p-6 sm:p-8 md:p-10 bg-teal-900/20 backdrop-blur-3xl border border-teal-400/30 rounded-2xl md:rounded-[40px] shadow-2xl md:translate-y-16">
+            <h2 className="text-teal-400 font-black uppercase text-xs tracking-widest mb-2 sm:mb-4">Verified Profile</h2>
+            <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase leading-tight">
               Heavy & Civil Engineering Authority
             </p>
-            <div className="mt-8 flex gap-4">
-                <span className="bg-teal-500 px-4 py-1 rounded-full text-xs font-black text-teal-950 uppercase tracking-tighter">D&B Registered</span>
-                <span className="bg-white/10 px-4 py-1 rounded-full text-xs font-bold text-white uppercase italic">Private Limited</span>
+            <div className="mt-6 sm:mt-8 flex flex-wrap gap-2 sm:gap-4">
+                <span className="bg-teal-500 px-3 sm:px-4 py-1 rounded-full text-xs font-black text-teal-950 uppercase tracking-tighter">D&B Registered</span>
+                <span className="bg-white/10 px-3 sm:px-4 py-1 rounded-full text-xs font-bold text-white uppercase italic">Private Limited</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 3: REACH */}
-      <section className="h-screen flex items-center justify-end px-10 md:px-24">
-        <div className="max-w-2xl text-right p-12 bg-teal-950/40 backdrop-blur-md border-r-[12px] border-teal-500">
-          <h2 className="text-7xl md:text-9xl font-black text-white uppercase italic leading-none">Global<br/>Scale</h2>
-          <div className="mt-12 space-y-10">
+      <section className="min-h-screen flex items-center justify-end px-4 sm:px-6 md:px-12 lg:px-24 py-8">
+        <div className="w-full max-w-2xl text-right p-4 sm:p-8 md:p-12 bg-teal-950/40 backdrop-blur-md border-r-4 md:border-r-[12px] border-teal-500 rounded-2xl md:rounded-none">
+          <h2 className="text-4xl sm:text-7xl md:text-9xl font-black text-white uppercase italic leading-none">Global<br/>Scale</h2>
+          <div className="mt-6 sm:mt-12 space-y-6 sm:space-y-10">
             <div>
-              <p className="text-8xl font-black text-teal-400 italic leading-none">150<span className="text-white tracking-tighter not-italic text-5xl">KM</span></p>
-              <p className="text-teal-100/40 font-bold uppercase tracking-[0.3em] text-sm mt-2">Pipeline Infrastructure Developed</p>
+              <p className="text-4xl sm:text-7xl md:text-8xl font-black text-teal-400 italic leading-none">150<span className="text-white tracking-tighter not-italic text-xl sm:text-3xl md:text-5xl">KM</span></p>
+              <p className="text-teal-100/40 font-bold uppercase tracking-wider text-xs sm:text-sm mt-2">Pipeline Infrastructure Developed</p>
             </div>
             <div>
-              <p className="text-8xl font-black text-white italic leading-none">50<span className="text-teal-400 tracking-tighter not-italic text-5xl">+</span></p>
-              <p className="text-teal-100/40 font-bold uppercase tracking-[0.3em] text-sm mt-2">Major Government Contracts Executed</p>
+              <p className="text-4xl sm:text-7xl md:text-8xl font-black text-white italic leading-none">50<span className="text-teal-400 tracking-tighter not-italic text-xl sm:text-3xl md:text-5xl">+</span></p>
+              <p className="text-teal-100/40 font-bold uppercase tracking-wider text-xs sm:text-sm mt-2">Major Government Contracts Executed</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 4: CONTACT */}
-      <section className="h-screen flex flex-col items-center justify-center text-center px-10">
-        <div className="p-16 md:p-24 bg-gradient-to-br from-teal-600 to-teal-900 rounded-[60px] shadow-[0_0_100px_rgba(20,184,166,0.2)] w-full max-w-6xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-10 opacity-10 text-[15rem] font-black uppercase italic pointer-events-none">ABBS</div>
-          <h2 className="text-7xl md:text-[10rem] font-black text-white uppercase mb-12 italic leading-[0.8]">
+      <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-12 py-8">
+        <div className="p-6 sm:p-12 md:p-16 lg:p-24 bg-gradient-to-br from-teal-600 to-teal-900 rounded-3xl md:rounded-[60px] shadow-[0_0_100px_rgba(20,184,166,0.2)] w-full max-w-6xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-2 sm:p-6 md:p-10 opacity-10 text-7xl sm:text-[10rem] md:text-[15rem] font-black uppercase italic pointer-events-none">ABBS</div>
+          <h2 className="text-4xl sm:text-7xl md:text-[8rem] lg:text-[10rem] font-black text-white uppercase mb-6 sm:mb-12 italic leading-[0.8]">
             Laying the<br/>Future
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <button className="bg-teal-400 text-teal-950 py-6 rounded-2xl text-2xl font-black uppercase hover:scale-105 transition-transform">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <button className="bg-teal-400 text-teal-950 py-4 sm:py-6 rounded-2xl text-lg sm:text-2xl font-black uppercase hover:scale-105 transition-transform">
               Nagercoil HQ
             </button>
-            <button className="border-4 border-white text-white py-6 rounded-2xl text-2xl font-black uppercase hover:bg-white hover:text-teal-900 transition-all">
+            <button className="border-2 sm:border-4 border-white text-white py-4 sm:py-6 rounded-2xl text-lg sm:text-2xl font-black uppercase hover:bg-white hover:text-teal-900 transition-all">
               Tirunelveli Br.
             </button>
           </div>
         </div>
-        <p className="mt-20 text-teal-800 font-black uppercase tracking-[1.5em] text-[10px] md:text-xs">
+        <p className="mt-10 sm:mt-20 text-teal-800 font-black uppercase tracking-widest text-[10px] sm:text-xs">
           ABBS INFRASTRUCTURE PRIVATE LIMITED • TAMIL NADU
         </p>
       </section>
