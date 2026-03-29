@@ -7,8 +7,7 @@ import {
   Stars, 
   PerspectiveCamera, 
   Float, 
-  Environment, 
-  Text,
+  Environment,
   Sparkles
 } from '@react-three/drei';
 import * as THREE from 'three';
